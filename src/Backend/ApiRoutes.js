@@ -1,0 +1,45 @@
+export const SIGN_UP = 'register';
+export const SIGN_IN = 'login';
+export const FORGOT_PASSWORD = 'forgot-password';
+export const VERIFY_OTP = 'otp';
+export const RESET_PASSWORD = 'reset-password';
+export const CHANGE_PASSWORD = 'changePassword';
+export const LOGOUT = 'logout';
+export const DELETE_ACCOUNT = 'deleteAccount';
+export const GET_PROFILE = 'getProfile';
+export const UPDTAE_PROFILE = 'updateProfile';
+export const UPDTAE_PROFILE_PICTURE = 'updateProfilePicture';
+export const OTP_VERIFY = 'verify-otp';
+
+export const GET_ALL_FEED = 'getAllFeed';
+export const FEEDBACK = 'feedback';
+export const CMS_PAGES = 'cms_page/';
+export const ALL_CATEGORY = 'blog-category-list';
+export const SAVE_BOOKMARK = 'bookmarkPost';
+export const DELETE_BOOKMARK = 'deleteBookmarkPost';
+export const ALL_BOOKMARKED_POSTS = 'AllBookmarkPost';
+export const SEARCH_BLOG = 'searchBlog';
+
+export const NOTIFICATION = 'getCustomNotification';
+export const MYSTORIES = 'list-story';
+export const SEND_STORY = 'send-story';
+export const USER_WALLET = 'user-wallet';
+export const LIST_WALLET_HISTORY = 'list-wallet-history';
+export const PRODUCT_LIST = 'product-list';
+export const PRODUCT_REQUEST = 'product-request';
+export const BLOG_CATEGORY = 'blog-category';
+export const LIST_REQUEST = 'list-request';
+
+export const ADVERTISEMENT_BANNER = 'Ads/newsads';
+export const FULL_PAGE_ADS = 'Ads/fullscreenads';
+export const BLOG_DETAIL = 'blog-details';
+export const BLOG_VIEW_COUNT = 'increaseBlogViewCount';
+export const SETTING_LIST = 'setting-list';
+export const SOCIAL_MEDIA = 'socialMediaLogin';
+export const NOTIFICATION_TOGGLE = 'notificationEnabledUser';
+export const RESET_ALL_NEWS = 'blogResetview';
+export const RESEND_OTP = 'resend-otp';
+export const UPDATE_TOKEN = 'updateToken';
+export const MANAGE_REQUEST = 'list-request';
+export const ADD_DEVICE_TOKEN = 'addDeviceToken';
+export const REMOVE_DEVICE_TOKEN = 'removeDeviceToken';

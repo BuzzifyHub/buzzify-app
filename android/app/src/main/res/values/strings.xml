@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Buzzify</string>
+    <string name="facebook_app_id">1234567890</string>
+    <string name="facebook_client_token">abcdef123456</string>
+</resources>
+<!-- <string name="facebook_app_id">7677416882387171</string>
+    <string name="facebook_client_token">d59900f80a09d2303cac885c2809c36c</string> -->

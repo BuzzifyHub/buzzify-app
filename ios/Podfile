@@ -1,0 +1,59 @@
+def node_require(script)
+  require Pod::Executable.execute_command('node', ['-p',
+    "require.resolve(
+     '#{script}',
+     {paths: [process.argv[1]]},
+    )", __dir__]).strip
+end
+
+node_require('react-native/scripts/react_native_pods.rb')
+node_require('react-native-permissions/scripts/setup.rb')
+
+ENV['RCT_NEW_ARCH_ENABLED'] = '0'# <- This disables the New Architecture
+platform :ios, min_ios_version_supported
+
+prepare_react_native_project!
+use_frameworks! :linkage => :static
+$RNFirebaseAsStaticFramework = true
+
+setup_permissions([
+  'Camera',
+  'MediaLibrary',
+  'Notifications',
+  'PhotoLibrary',
+  'LocationWhenInUse',
+  'LocationAccuracy',
+  'LocationAlways',
+])
+
+target 'Buzzify' do
+  config = use_native_modules!
+
+  # Facebook SDK
+  pod 'FBSDKCoreKit', :modular_headers => true
+  pod 'FBSDKLoginKit', :modular_headers => true
+  pod 'FBSDKShareKit', :modular_headers => true
+  pod 'react-native-fbsdk-next', :path => '../node_modules/react-native-fbsdk-next'
+
+  # Google Sign-In
+  pod 'RNGoogleSignin', :path => '../node_modules/@react-native-google-signin/google-signin'
+
+  # Firebase
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  post_install do |installer|
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+    )
+  end
+end

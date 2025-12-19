@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "437517013917",
+    "project_id": "buzzify-c3a6e",
+    "storage_bucket": "buzzify-c3a6e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437517013917:android:742761813226550b5a1574",
+        "android_client_info": {
+          "package_name": "com.buzzify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437517013917-abkmk1bk81o7upm2k0n8e8d21o4f1bbf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.buzzify",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "437517013917-vo8ld7hq88s111kaqr7re6cg6hjq15pi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.buzzify",
+            "certificate_hash": "74e87857895d2eb6b40d169a75e1b09fe4f64856"
+          }
+        },
+        {
+          "client_id": "437517013917-77rlv8obhte8h7tjbe5nrurope7q7gju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPzbqX0li19pHg3l5x0-AfcWAke8ES_tU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437517013917-77rlv8obhte8h7tjbe5nrurope7q7gju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
